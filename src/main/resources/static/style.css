@@ -1,0 +1,225 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	scroll-behavior: smooth;	
+}
+
+
+#main{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+
+.send-req-box{
+    position: absolute;
+    left: 0;
+    bottom: -0%;
+    background-color: #333440;    
+    width: 100%;
+    border-top:1px solid rgba(148, 144, 144, 0) ;
+    padding: 20px;
+}
+
+.form{
+    border: 1px solid rgba(255, 0, 0, 0);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.input_div{
+    width: 100%;
+    background-color: #40414F;
+    outline: none;
+    border: 1px solid transparent;
+    padding: 10px 15px;
+    font-size: 20px;
+    color: rgb(252, 252, 252);
+}
+
+.input_div::placeholder{
+    color: rgb(170, 165, 165);
+}
+
+.btn_submit{
+    padding:  0 20px;
+    background-color: #40414F;
+    border: 1px solid transparent;
+    color: white;
+}
+
+
+
+
+#messageArea{
+    position: absolute;
+    /* background-color: red; */
+    height: 75%;
+    max-height: 75%;
+    width: 100%;
+    padding: 5% 0%;
+    overflow-y: scroll;
+}
+
+.client-req{
+    font-size: 18px;
+    padding: 10px 5%;
+    
+    display: flex;
+}
+
+.text{
+    font-size: 18px;
+}
+
+.client-req img,
+.server-res img{
+    width: 45px;
+    height: 45px;
+    min-width: 45px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-right: 20px; 
+    object-fit: cover;   
+}
+
+.server-res{
+    display: block;
+    padding: 10px 5%;
+    background-color: #444654;
+    font-size: 18px;
+    display: flex;
+}
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    /* box-shadow: inset 0 0 5px grey;  */
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(160, 157, 157); 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #6e6c6c; 
+  }
+
+  
+  
+  
+  
+  /*USER PAGE DESIGN STARTS HERE*/
+  #username-page{
+  	height: 100vh;
+  	width: 100vw;
+  	display: flex;
+  	justify-content: center;
+  	align-items:center;
+  	background: rgb(71,200,81);
+	background: -webkit-linear-gradient(90deg, rgba(71,200,81,1) 50%, rgba(34,115,193,1) 50%);
+	background: -moz-linear-gradient(90deg, rgba(71,200,81,1) 50%, rgba(34,115,193,1) 50%);
+	background: -o-linear-gradient(90deg, rgba(71,200,81,1) 50%, rgba(34,115,193,1) 50%);
+	background: -webkit-gradient(linear, 0 100%, 0 0, color-stop(0.5, rgba(71,200,81,1)), color-stop(0.5, rgba(34,115,193,1)));
+	background: linear-gradient(90deg, rgba(71,200,81,1) 50%, rgba(34,115,193,1) 50%);
+}
+
+.username-page-container{
+	position: relative;	
+	padding: 50px 60px;
+	border-radius: 10px;
+	backdrop-filter: blur(30px);
+	z-index: 5;
+}  
+
+.username-page-container::after {
+	content: "";	
+	border:1px solid rgba(34,115,193,.5);
+	position: absolute;
+	height: 100%;
+	width: 50%;	
+	left:0;
+	top:0;
+	z-index: -1;
+	border-right : none;
+	border-radius:10px;
+	border-top-right-radius: 0px;
+	border-bottom-right-radius: 0px;
+}  
+  
+.username-page-container::before {
+	content: "";	
+	border:1px solid rgba(71,200,81,.5);
+	border-left : none;
+	position: absolute;
+	height: 100%;
+	width: 50%;	
+	right:0;
+	top:0;
+	z-index: -1;	
+	border-radius:10px;	
+	border-top-left-radius: 0px;
+	border-bottom-left-radius: 0px;	
+}
+
+
+.hidden{
+	display:  none !important;
+}
+  
+  
+  
+  
+ .event-message{
+ text-align: center;
+ } 
+ 
+li{
+	list-style-type: none;
+}
+
+ li.chat-message {
+    background: #ffffff14;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius:5px;
+}
+
+li.chat-message i{
+	float: left;
+	display: flex;
+	justify-content:center;
+	align-items: center;
+	height: 50px;
+	width:50px;
+	border-radius: 50%;
+	text-transform:uppercase;
+	font-weight: bolder;
+	font-style: normal;
+	font-size: 25px;
+	margin-right:10px;
+}
+
+li.chat-message span{
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 18px;
+}
+
+li.chat-message p{
+	font-size:16px;
+	color: #bebdbd;
+	margin:0;
+}
+ 
